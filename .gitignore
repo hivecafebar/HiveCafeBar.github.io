@@ -17,6 +17,13 @@ coverage
 /cypress/videos/
 /cypress/screenshots/
 
+# SRC
+*.psd
+*Copy.jpg
+*Copy.png
+*SRC.jpg
+*SRC.png
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
