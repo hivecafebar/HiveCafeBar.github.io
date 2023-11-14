@@ -1,15 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index-3541e00c.js"></script>
-    <link rel="stylesheet" href="/assets/index-efcb3133.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google"                  content="notranslate" />
+    <meta name="dcterms.rights"          content="Copyright NECjAR, all right reserved." />
+    <meta name="dcterms.rightsHolder"    content="NECjAR" />
+    <meta name="dcterms.dateCopyrighted" content="2011" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="rgb(0, 0, 0)" />
+
+    <meta name="description" content="Creating timeless interactive entertainment that makes positive change to the human psyche worldwide. Nectar makes everything better. Our ambition is unlimited." lang="en" />
+    <meta name="keywords"    content="j, Nectar, NECjAR, official, Drift, Echo, Anna, ARNTAj, Arch, ADLEIAVDE, Aetheoptera, Catae, Catective, GR8, Great Eight, Cascade, Relict, Hive, Hive Cafe, Hive Bar, ICS, Rhytm, HHH, Head Held High, Travis, Travis Traveler, Traveler, Digger, Digby Digger, Kadae, нектар" lang="en" />
+    <meta name="author"      content="NECjAR" />
+    
+    <meta property="og:title"        content="HIVE.café" />
+    <meta property="og:type"         content="website" />
+
+    <meta property="og:book:author"  content="Kadae" />
+    <meta property="og:book:tag"     content="<?=$jPage_HEAD_keywords?>" />
+
+    <meta property="og:video"          content="https://youtu.be/<?=$jPage_ECHO_YouTube_main?>" />
+    <meta property="og:video:director" content="Kadae" />
+    <meta property="og:video:actor"    content="" />
+    <meta property="og:video:tag"      content="<?=$jPage_HEAD_keywords?>" />
+
+    <meta property="og:url"          content="https://hive.cafe" />
+    <meta property="og:image"        content="/icons/hive.jpg" />
+    <meta property="og:image:alt"    content="HIVE.café" />
+    <meta property="og:site_name"    content="HIVE.café" />
+    <meta property="og:description"  content="<?=$jPage_HEAD_description?>" />
+    <meta property="og:locale"       content="en" />
+
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:site"        content="@NECjAR" />
+    <meta name="twitter:creator"     content="@Kadae" />
+    <meta name="twitter:url"         content="https://hive.cafe" />
+    <meta name="twitter:title"       content="HIVE.café" />
+    <meta name="twitter:description" content="<?=$jPage_HEAD_description?>" />
+    <meta name="twitter:image"       content="/icons/hive.jpg" />
+    <meta name="twitter:domain"      content="hive.cafe" />
+
+    <meta name="application-name"        content="HIVE.café" />
+    <meta name="msapplication-tooltip"   content="<?=$jPage_HEAD_description?>" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileImage"         content="/icons/j-114x114.png" />
+    <meta name="msapplication-square70x70logo"   content="/icons/j-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/icons/j-150x150.png" />
+    <meta name="msapplication-square310x310logo" content="/icons/j-310x310.png" />
+    <meta name="msapplication-wide310x150logo"   content="/icons/j-310x150.png" />
+    <meta name="msapplication-task" content="name=ANNA; action-uri=<?=$jApp_domainURL?>/anna; icon-uri=/favicon.ico" />
+    <meta name="msapplication-task" content="name=ICS;  action-uri=<?=$jApp_domainURL?>/ics;  icon-uri=/favicon.ico" />
+    <meta name="msapplication-task" content="name=ECHO; action-uri=<?=$jApp_domainURL?>/echo; icon-uri=/favicon.ico" />
+    <meta name="msapplication-task" content="name=GR8;  action-uri=<?=$jApp_domainURL?>/gr8;  icon-uri=/favicon.ico" />
+    
+    <meta name="apple-mobile-web-app-capable"          content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="image" content="/icons/hive.jpg" />
+
+    <meta name="rating" content="General" />
+  
+    <meta name="yandex-verification" content="29a1aa51e8d78160" /> <!-- Yandex -->
+    <meta name="p:domain_verify" content="" /> <!-- Pinterest -->
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon"          href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link rel="icon"          href="/icons/j-228x228.png" sizes="228x228" />
+  
+    <link rel="apple-touch-startup-image"    href="/icons/apple-touch-startup.png" />
+    <link rel="apple-touch-icon"             href="/icons/j-72x72.png" /><!-- iPhone -->
+    <link rel="apple-touch-icon"             href="/icons/j-114x114.png" sizes="114x114" /><!-- iPhone Retina -->
+    <link rel="apple-touch-icon"             href="/icons/j-144x144.png" sizes="144x144" /><!-- iPad Retina -->
+    <link rel="apple-touch-icon-precomposed" href="/icons/j-200x200.png" sizes="200x200" />
+    
+    <link rel="author" href="Kadae" />
+    
+    <title>HIVE.café</title>
+
+    <style type="text/css">
+      body {background-color:black;}
+    </style>
+
+    <script>document.onmousedown = disableclick; function disableclick(event) {if (event.button == 2) {return false;}}</script>
+  
+    <script async custom-element="amp-auto-ads" src="//cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-9122451238172590",
+      enable_page_level_ads: true
+    });
+    </script>
+    
+    <script>
+      window.onbeforeunload = function(e) {
+        e = e || window.event;
+        // For IE and Firefox prior to version 4
+        if (e) {
+            e.returnValue = "Sure?";
+        }
+        // For Safari
+        return "Sure?";
+      };
+    </script>
+    <script type="module" crossorigin src="/assets/index-36b2c580.js"></script>
+    <link rel="stylesheet" href="/assets/index-b6abbe75.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="j"></div>
     
   </body>
 </html>
