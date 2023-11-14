@@ -1,9 +1,9 @@
-import './assets/j.css'
+import './assets/styles/j.less'
 
 import { createApp } from 'vue'
 import j from './j.vue'
-import Router from './j/router'
+import Anna from './j/Anna'
 
-const HIVE = createApp(j)
-HIVE.use(Router)
-HIVE.mount('#j')
+const NECjAR = createApp(j)
+NECjAR.use(Anna)
+NECjAR.mount('#⡸')
